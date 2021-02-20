@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // 使用 bootstrap 的分页样式
+        \Illuminate\Pagination\Paginator::useBootstrap();
     }
 }

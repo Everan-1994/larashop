@@ -13,5 +13,13 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-
+    // 用户管理
+    $router->get('users', 'UserController@index');
+    $router->put('users/{id}', 'UserController@update');
+    // 商品管理
+    $router->get('products', 'ProductController@index');
+    $router->get('products/create', 'ProductController@create');
+    $router->post('products', 'ProductController@store');
+    $router->get('products/{id}/edit', 'ProductController@edit');
+    $router->put('products/{id}', 'ProductController@update');
 });
