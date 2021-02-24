@@ -22,4 +22,6 @@ Route::group([
     $router->post('products', 'ProductController@store');
     $router->get('products/{id}/edit', 'ProductController@edit');
     $router->put('products/{id}', 'ProductController@update');
+    // 订单管理
+    $router->get('orders', 'OrdersController@index');
 });

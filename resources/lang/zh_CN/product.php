@@ -1,4 +1,5 @@
 <?php
+
 return [
     'labels' => [
         'Product' => '商品列表',
